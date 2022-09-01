@@ -84,6 +84,11 @@ section > h2 {
     /* margin-bottom: 3rem; */
 }
 
+.header-title {
+    color: #191817;
+    padding-bottom: 1rem;
+}
+
 .text-light {
     color: var(--color-light);
 }

@@ -36,7 +36,7 @@ const About = () => {
             at a laboratory group in UPD-DCS. </p>
             <p>
             I  graduated with a bachelor's degree in Mechanical Engineering from University of the Philippines - Diliman in 2020 
-            and passed the board examinations at 2021. I am currently looking for job opportunity that matches my interest.
+            and passed the board examinations in 2021. I am currently looking for job opportunity that matches my interest.
             </p>
 
             <a href ='#contact' className='btn btn-primary'>Let's Talk</a> 
