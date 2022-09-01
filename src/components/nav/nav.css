@@ -1,9 +1,8 @@
 nav {
-    background: #94B49F;
+    background: rgba(148, 180, 159, 0.75);
     width: max-content;
     display: block;
     padding: 0.7rem 1.7rem;
-    z-index: 4;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
@@ -31,4 +30,17 @@ nav a.active {
     /* background: var(--color-primary); */
     background: #76907f;
     color: var(--color-bg);
+}
+
+/************* MEDIUM DEVICES **************/
+@media screen and  (min-width: 768px) and (max-width: 1024px) {
+    
+}
+
+/************* SMALL DEVICES **************/
+@media screen  and (max-width: 767px) {
+
+    nav {
+        padding: 0.3em 1.7rem;
+    }
 }

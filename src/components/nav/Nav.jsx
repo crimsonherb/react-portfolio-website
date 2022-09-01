@@ -1,9 +1,8 @@
 import React, {useState} from 'react'
 import './nav.css'
-import {AiOutlineHome} from 'react-icons/ai'
-import {AiOutlineUser} from 'react-icons/ai'
-import {BiBook} from 'react-icons/bi'
-import {BiMessageSquareDetail} from 'react-icons/bi'
+
+
+import {RiHome2Line, RiUserLine, RiFolderOpenLine, RiMessage3Line} from 'react-icons/ri'
 
 
 const Nav = () => {
@@ -14,16 +13,16 @@ const Nav = () => {
     <nav>
       <a href='#'
       onClick={() => setActiveNav('#')}
-      className={activeNav === '#' ? 'active' :''}><AiOutlineHome/></a>
+      className={activeNav === '#' ? 'active' :''}><RiHome2Line/></a>
       <a href='#about' 
       onClick={() => setActiveNav('#about')} 
-      className={activeNav === '#about' ? 'active' :''}><AiOutlineUser/></a>
+      className={activeNav === '#about' ? 'active' :''}><RiUserLine/></a>
       <a href='#portfolio'
       onClick={() => setActiveNav('#portfolio')} 
-      className={activeNav === '#portfolio' ? 'active' :''}><BiBook/></a>
+      className={activeNav === '#portfolio' ? 'active' :''}><RiFolderOpenLine/></a>
       <a href='#contact'
       onClick={() => setActiveNav('#contact')} 
-      className={activeNav === '#contact' ? 'active' :''}><BiMessageSquareDetail/></a>
+      className={activeNav === '#contact' ? 'active' :''}><RiMessage3Line/></a>
     </nav>
   )
 }

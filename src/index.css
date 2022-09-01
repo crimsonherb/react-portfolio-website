@@ -6,7 +6,7 @@
     padding: 0;
     border: 0;
     outline: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
     list-style: none;
     text-decoration: none;
 }
@@ -16,8 +16,8 @@
     --color-bg-variant: #b0ada2;
     --color-primary: #ca4629;
     --color-primary-variant: #76549A;
-    --color-white: #fff;
-    --color-light: rgba(255, 255, 255, 0.6);
+    --color-white: #ca4629;
+    --color-light: #ca4629;
 
     --transition: all 400ms ease;
 
@@ -28,6 +28,7 @@
 
 html {
     scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
 }
 
 ::-webkit-scrollbar{
@@ -40,16 +41,18 @@ body {
     color: var(--color-primary);
     line-height: 1.7;
     background-color: #FCF8E8;
-    background-size: 113px 70px;
+    /* background-size: 113px 70px; */
+    word-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
 }
 
 
 /************* GENERAL STYLES **************/
 
-.container {
-    width: var(--container-width-lg);
-    margin: 0 auto;
+div {
+    /* display: block; */
 }
+
 
 h1,h2,h3,h4,h5 {
     font-weight: 700;
@@ -57,13 +60,18 @@ h1,h2,h3,h4,h5 {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
+    color: #191817;
+}
+
+p {
+    margin-bottom: 1rem;
 }
 
 section {
     margin-top: 8rem;
     height: 100vh;
-    margin-bottom: 8rem;
+    margin-bottom: 10rem;
 }
 
 section > h2, section >h5 {
@@ -73,7 +81,7 @@ section > h2, section >h5 {
 
 section > h2 {
     color: var(--color-primary);
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
 }
 
 .text-light {
@@ -118,23 +126,42 @@ img {
 }
 
 /************* MEDIUM DEVICES **************/
-@media screen  and (max-width: 1024px) {
-    .container {
-        width: var(--container-width-md);
-    }
+@media screen and  (min-width: 768px) and (max-width: 1024px) {
 
-    section {
-        margin-top: 6rem;
+    /* section {
+        margin-top: 1rem;
+    } */
+
+    h1 {
+        font-size: 3rem;
     }
 }
 
 /************* SMALL DEVICES **************/
-@media screen  and (max-width: 600px) {
-    .container {
-        width: var(--container-width-sm);
+@media screen  and (max-width: 767px) {
+    
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 0.3rem 0.4rem;
+    }
+    /* section {
+        margin-top: 1rem;
     }
 
     section > h2 {
-        margin-bottom: 10rem;
+        margin-bottom: 1rem;
+    } */
+
+    p {
+        font-size: 0.8rem;
+        line-height: 1.2rem;
     }
+
 } 

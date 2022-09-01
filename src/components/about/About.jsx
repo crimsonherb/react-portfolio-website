@@ -5,60 +5,49 @@ import { FaAward } from 'react-icons/fa'
 import { FiUsers } from 'react-icons/fi'
 import {VscFolderLibrary} from 'react-icons/vsc'
 
+import ME from '../../assets/OctoIcon1.png'
+
 const About = () => {
   return (
     <section id="about">
-      <h5>Get To Know</h5>
-      <h2>About Me</h2>
-
-      <div className='container about__container'>
+      <div className='about-area'>
+      <div className='about__container'>
         
+
+
+      {/* <h2 className='header-title'>About Me</h2> */}
+
         <div className='about__me'>
           <div className='about__me-image'>
-            {/* <img src={ME} alt="About Image" /> */}
+            <img src={ME} alt="About Image" />
           </div>
         </div>
 
+        {/* <div className='about-intro'> */}
+
         <div className='about__content'>
-          
-          <div className='about__cards'>
-            
-            <article className='about__card'>
-              <FaAward className='about__icon'/>
-              <h5>Experience</h5>
-              <small>3+ Years working</small>
-            </article>
 
-            <article className='about__card'>
-              <FiUsers className='about__icon'/>
-              <h5>Clients</h5>
-              <small>200+ Worldwide</small>
-            </article>
+            <h2 className='header-title'>About Me</h2>
 
-            <article className='about__card'>
-              <VscFolderLibrary className='about__icon'/>
-              <h5>Projcets</h5>
-              <small>80+ Completed</small>
-            </article>
-
-          </div>
-          
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, 
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Hello! I'm Joma Villanueva. 
+            I developed a strong interest in web development when creating a thesis project for
+            a research subject in 2014. This intereset was further ignited during a summer internship
+            at a laboratory group in UPD-DCS. </p>
+            <p>
+            I  graduated with a bachelor's degree in Mechanical Engineering from University of the Philippines - Diliman in 2020 
+            and passed the board examinations at 2021. I am currently looking for job opportunity that matches my interest.
             </p>
 
-            <a href ='#contact' className='btn btn-primary'>Let's Talk</a>
+            <a href ='#contact' className='btn btn-primary'>Let's Talk</a> 
 
-          </div>
+        </div>
+
+      {/* </div> */}
+
       </div>
 
-
-
+    </div>
     </section>
   )
 }

@@ -34,14 +34,14 @@ const App = () => {
     <>
 
         <Header />
-        <div>{posY}</div>
-        { posY > 720  ? <Nav/> : <Navi/>}
-        {/* <Nav />
-        <Navi /> */}
+        <Nav />
+        {/* <div>{posY}</div> */}
+        {/* { posY > 720  ? <Nav/> : <Navi/>} */}
         <About />
+        {/*
         <Portfolio />
         <Contact />
-        <Footer />
+        <Footer /> */}
     </>
   )
 }
