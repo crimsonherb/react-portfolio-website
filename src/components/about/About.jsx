@@ -14,16 +14,11 @@ const About = () => {
       <div className='about__container'>
         
 
-
-      {/* <h2 className='header-title'>About Me</h2> */}
-
         <div className='about__me'>
           <div className='about__me-image'>
             <img src={ME} alt="About Image" />
           </div>
         </div>
-
-        {/* <div className='about-intro'> */}
 
         <div className='about__content'>
 
@@ -43,7 +38,6 @@ const About = () => {
 
         </div>
 
-      {/* </div> */}
 
       </div>
 

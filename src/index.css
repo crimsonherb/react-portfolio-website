@@ -41,17 +41,12 @@ body {
     color: var(--color-primary);
     line-height: 1.7;
     background-color: #FCF8E8;
-    /* background-size: 113px 70px; */
     word-wrap: break-word;
     -webkit-font-smoothing: antialiased;
 }
 
 
 /************* GENERAL STYLES **************/
-
-div {
-    /* display: block; */
-}
 
 
 h1,h2,h3,h4,h5 {
@@ -70,7 +65,7 @@ p {
 
 section {
     margin-top: 8rem;
-    height: 100vh;
+    /* height: 100vh; */
     margin-bottom: 10rem;
 }
 
@@ -111,6 +106,7 @@ a:hover {
     cursor: pointer;
     border: 1px solid var(--color-primary);
     transition: var(--transition);
+    font-family: 'Fauna One', serif;
 }
 
 .btn:hover {
@@ -133,10 +129,6 @@ img {
 /************* MEDIUM DEVICES **************/
 @media screen and  (min-width: 768px) and (max-width: 1024px) {
 
-    /* section {
-        margin-top: 1rem;
-    } */
-
     h1 {
         font-size: 3rem;
     }
@@ -156,13 +148,6 @@ img {
     .btn {
         padding: 0.3rem 0.4rem;
     }
-    /* section {
-        margin-top: 1rem;
-    }
-
-    section > h2 {
-        margin-bottom: 1rem;
-    } */
 
     p {
         font-size: 0.8rem;

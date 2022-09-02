@@ -38,11 +38,9 @@ const App = () => {
         {/* <div>{posY}</div> */}
         {/* { posY > 720  ? <Nav/> : <Navi/>} */}
         <About />
-
         <Portfolio />
-        {/*
         <Contact />
-        <Footer /> */}
+        {/*<Footer /> */}
     </>
   )
 }

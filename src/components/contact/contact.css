@@ -1,28 +1,36 @@
-.container.contact__container {
-    width: 58%;
-    display: grid;
-    grid-template-columns: 30% 50%;
-    gap: 12%;
+.contact-area {
+    min-height: 100vh;
+    align-items: center;
 }
 
-.contact__options {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
+.contact-area h2 {
+    text-align: center;
+    padding-top: 4rem;
+}
+
+.contact__container {
+    width: 100%;
+    /* height: 100%; */
+    display: grid;
+    text-align: left;
+    padding: 50px 25px;
+    margin: 0 auto;
+    grid-template-columns: 20% 60%;
+    gap: 3rem;
 }
 
 .contact__option {
-    background: var(--color-bg-variant);
-    padding: 1.2rem;
-    border-radius: 1.2rem;
+    background: #b4cabb;
+    padding: 1rem;
+    border-radius: 1rem;
     text-align: center;
     border: 1px solid transparent;
     transition: var(--transition);
 }
 
 .contact__option:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
+    background: #bed2c5;
+    /* border-color: var(--color-primary-variant); */
 }
 
 .contact__option-icon {
@@ -30,11 +38,26 @@
     margin-bottom: 0.5rem;
 }
 
+.contact__option h5 {
+    font-family: 'Fauna One', serif;
+    font-weight: 400;
+}
+
+.contact__option h4 {
+    color: #191817;
+    font-weight: 500;
+}
+
 .contact__option a {
     margin-top: 0.7rem;
     display: inline-block;
     font-size: 0.8rem;
 }
+
+.contact__option-icon{
+    color: #191817;
+}
+
 
 /************ FORM ************/
 form {
@@ -44,28 +67,65 @@ form {
 }
 
 input,textarea {
-    width: 100%;
-    padding: 1.5rem;
+    font-family: 'Fauna One', serif;
+    width: 80%;
+    padding: 1.2rem;
     border-radius: 0.5rem;
     background: transparent;
-    border: 2px solid var(--color-primary-variant);
+    border: 2px solid #191817;
     resize: none;
     color: var(--color-white);
 }
 
-#contact {
-    z-index: 3;
-    position: relative;
+/* button {
+    padding: 0.5rem 0.5rem;
+} */
+
+/************* MEDIUM DEVICES **************/
+@media screen and  (min-width: 768px) and (max-width: 1024px) {
+    .contact__container {
+        grid-template-columns: 40% 60%;
+        width: 85%;
+        gap: 1rem;
+        padding-top: 2rem;
+    }
+    
+    .contact-area h2 {
+        text-align: center;
+        padding-top: 10rem;
+    }
 }
 
-@media screen and (max-width: 1024px) {
-    .container.contact__container {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+
+/************* SMALL DEVICES **************/
+@media screen  and (max-width: 767px) {
+    .contact__container {
+        grid-template-columns: 100%;
+        width: 80%;
+        padding: 0;
+        gap: 1rem;
+        line-height: 1.2rem;
     }
-}
-@media screen and (max-width: 600px) {
-    .container.contact__container {
-        width: var(--container-width-sm);
+    
+    .contact__option {
+        padding: 0.5rem;
     }
+
+    .contact__option-icon {
+        font-size: 1rem;
+    }
+
+    form {
+        gap: 0.3rem;
+    }
+
+    input,textarea {
+        padding: 0.7rem;
+        width: 90%;
+    }
+
+    .btn-primary {
+        line-height: 1.7;
+    }
+    
 }
