@@ -4,8 +4,6 @@ footer {
     text-align: center;
     font-size: 0.9rem;
     margin-top: 7rem;
-    position: relative;
-    z-index: 3;
 }
 
 footer a {
