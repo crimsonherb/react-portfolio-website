@@ -24,14 +24,9 @@
     display: grid;
     width: 80%;
     height: 80%;
-    transform: rotate(10deg);
-    transition: var(--transition); 
     z-index: 0;
 }
 
-.about__me-image:hover {
-    transform: rotate(0);
-}
 
 .about__icon {
     color: var(--color-primary);

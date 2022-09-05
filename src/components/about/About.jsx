@@ -1,8 +1,8 @@
 import React from 'react'
 import './about.css'
 
-// import ME from '../../assets/me-about.jpg'
-import ME from '../../assets/OctoIcon1.png'
+
+import ME from '../../assets/Picture.jpg'
 
 const About = () => {
   return (

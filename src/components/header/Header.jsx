@@ -3,7 +3,7 @@ import React from 'react'
 import './header.css'
 import CTA from './CTA'
 import HeaderSocials from './HeaderSocials'
-import IMG1 from '../../assets/OctoIcon1.png'
+import IMG1 from '../../assets/Octopus.png'
 
 function Header() {
   return (

@@ -18,7 +18,7 @@
     --color-primary-variant: #8C0000;
     --color-card:#EBC978;
     --color-card-hover: #efd393;
-    /* --transition: all 400ms ease; */
+    --transition: all 400ms ease;
 
     --container-width-lg: 75%;
     --container-width-md:  86%;
