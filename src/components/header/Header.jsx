@@ -7,7 +7,7 @@ import IMG1 from '../../assets/OctoIcon1.png'
 
 function Header() {
   return (
-    <div className='intro-area'>
+    <div className='intro-area' id='intro-area'>
 
       <HeaderSocials />
 

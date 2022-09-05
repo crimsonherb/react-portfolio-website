@@ -25,7 +25,7 @@ const data = [
     id: 3,
     image: IMG3,
     title: 'Portfolio Website',
-    description: 'Created using React and EMAILJS API to enable contacting',
+    description: 'Created using React and EMAILJS API to enable contact form',
     github: 'https://github.com',
     demo: 'https://github.com'
   }
@@ -36,7 +36,7 @@ const data = [
 const Portfolio = () => {
   return (
     <section id="portfolio">
-    <div className='portfolio-area'>
+    <div className='portfolio-area' id='portfolio-area'>
 
     <div className='portfolio-title'>
         <h2 className='header-title'>Portfolio</h2>

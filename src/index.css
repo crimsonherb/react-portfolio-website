@@ -12,14 +12,13 @@
 }
 
 :root{
-    --color-bg: #c9c6b9;
-    --color-bg-variant: #b0ada2;
-    --color-primary: #ca4629;
-    --color-primary-variant: #76549A;
-    --color-white: #ca4629;
-    --color-light: #ca4629;
-
-    --transition: all 400ms ease;
+    --color-bg: #FCF8E8;
+    --color-bg-variant: #E2DFD0;
+    --color-primary: #001446;
+    --color-primary-variant: #8C0000;
+    --color-card:#EBC978;
+    --color-card-hover: #efd393;
+    /* --transition: all 400ms ease; */
 
     --container-width-lg: 75%;
     --container-width-md:  86%;
@@ -40,7 +39,6 @@ body {
     background: var(--color-bg);
     color: var(--color-primary);
     line-height: 1.7;
-    background-color: #FCF8E8;
     word-wrap: break-word;
     -webkit-font-smoothing: antialiased;
 }
@@ -56,45 +54,23 @@ h1,h2,h3,h4,h5 {
 
 h1 {
     font-size: 4rem;
-    color: #191817;
+    color: var(--color-primary-variant);
 }
 
 p {
     margin-bottom: 1rem;
 }
 
-section {
-    margin-top: 8rem;
-    /* height: 100vh; */
-    margin-bottom: 10rem;
-}
-
-section > h2, section >h5 {
-    text-align: center;
-    color: var(--color-light);
-}
-
-section > h2 {
-    color: var(--color-primary);
-    /* margin-bottom: 3rem; */
-}
-
-.header-title {
-    color: #191817;
-    padding-bottom: 1rem;
-}
-
-.text-light {
-    color: var(--color-light);
-}
-
 a {
     color: var(--color-primary);
-    transition: var(--transition);
+    /* transition: var(--transition); */
 }
 
-a:hover {
-    color: var(--color-white);
+
+.header-title {
+    color: var(--color-primary-variant);
+    font-size: 2rem;
+    text-align: center;
 }
 
 .btn {
@@ -110,7 +86,7 @@ a:hover {
 }
 
 .btn:hover {
-    background: var(--color-white);
+    background: var(--color-primary);
     color: var(--color-bg);
     border-color: transparent;
 }
@@ -132,11 +108,19 @@ img {
     h1 {
         font-size: 3rem;
     }
+
+    body {
+        overflow-x: hidden;
+      }
 }
 
 /************* SMALL DEVICES **************/
 @media screen  and (max-width: 767px) {
     
+    body {
+        overflow-x: hidden;
+      }
+
     h1 {
         font-size: 2rem;
     }
@@ -152,6 +136,11 @@ img {
     p {
         font-size: 0.8rem;
         line-height: 1.2rem;
+    }
+
+    .header-title {
+        font-size: 1.6rem;
+        padding-bottom: 0.5rem;
     }
 
 } 

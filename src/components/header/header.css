@@ -39,10 +39,6 @@
     top: 3rem;
 }
 
-.header__socials a {
-    color: #ca4629;
-}
-
 
 /********** ME **********/
 
@@ -57,7 +53,9 @@
 
 /************* MEDIUM DEVICES **************/
 @media screen and  (min-width: 768px) and (max-width: 1024px) {
-
+    .container {
+        padding: 100px 10px;
+    }
 
 }
 

@@ -20,7 +20,7 @@
 }
 
 .portfolio__item {
-    background: #b4cabb;
+    background: var(--color-card);
     padding: 1.3rem;
     border-radius: 2rem;
     border: 1px solid transparent;
@@ -28,8 +28,7 @@
 }
 
 .portfolio__item:hover {
-    background: #bed2c5;
-    /* background: transparent; */
+    background: var(--color-card-hover);
 }
 
 .portfolio__item-image {
@@ -58,6 +57,8 @@
         grid-template-columns: 1fr 1fr;
         width: 85%;
     }
+
+    
 }
 
 /************* SMALL DEVICES **************/
