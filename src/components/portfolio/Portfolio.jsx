@@ -1,33 +1,33 @@
 import React from 'react'
-import IMG1 from '../../assets/portfolio1.jpg'
-import IMG2 from '../../assets/portfolio2.jpg'
-import IMG3 from '../../assets/portfolio3.jpg'
+import IMG1 from '../../assets/Recipe_webapp.jpg'
+import IMG2 from '../../assets/Todolist.jpg'
+import IMG3 from '../../assets/Portfolio3.jpg'
 import './portfolio.css'
 
 const data = [
   {
     id: 1,
-    image: IMG1,
-    title: 'Title 1',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porta.',
-    github: 'https://github.com',
-    demo: 'https://github.com'
+    image: IMG2,
+    title: 'Todo List',
+    description: 'To do list created using django rest framework and react',
+    github: 'https://github.com/crimsonherb/todo-list-django-react',
+    demo: null
   },
   {
     id: 2,
-    image: IMG2,
-    title: 'Title 1',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porta.',
-    github: 'https://github.com',
-    demo: 'https://github.com'
+    image: IMG1,
+    title: 'Recipe Webapp',
+    description: 'A recipe app created using django and PostgreSQL',
+    github: 'https://github.com/crimsonherb/django-project-1',
+    demo: null
   },
   {
     id: 3,
     image: IMG3,
     title: 'Portfolio Website',
-    description: 'Created using React and EMAILJS API to enable contact form',
-    github: 'https://github.com',
-    demo: 'https://github.com'
+    description: 'Website to showcase projects. Created using React and EMAILJS API to enable contacting option',
+    github: 'https://github.com/crimsonherb/react-portfolio-website',
+    demo: 'https://crimsonherb.vercel.app'
   }
 ]
 
@@ -36,7 +36,7 @@ const data = [
 const Portfolio = () => {
   return (
     <section id="portfolio">
-    <div className='portfolio-area' id='portfolio-area'>
+    <div className='portfolio-area'>
 
     <div className='portfolio-title'>
         <h2 className='header-title'>Portfolio</h2>
@@ -61,7 +61,11 @@ const Portfolio = () => {
 
               <div className='portfolio__item-cta'>
                 <a href={github} className='btn'>Github</a>
-                <a href={demo} className='btn btn-primary'>Live Demo</a>
+                {demo !== null ? (
+                  <a href={demo} className='btn btn-primary'>Live Demo</a>
+                ):(null)}
+
+
               </div>
 
               </div>
