@@ -1,5 +1,5 @@
-#Trial Project For Portfolio Website
+Portfolio Website project
 
-Created using React and EMAILJS API to enable contacting
+Created using React and EMAILJS API to enable contacting option
 
-Currently missing Portfolio, Contact, and Footer Section
+
