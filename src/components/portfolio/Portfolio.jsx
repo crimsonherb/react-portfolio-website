@@ -1,7 +1,8 @@
 import React from 'react'
 import IMG1 from '../../assets/Recipe_webapp.jpg'
 import IMG2 from '../../assets/Todolist.jpg'
-import IMG3 from '../../assets/portfolio3.jpg'
+import IMG3 from '../../assets/Portfolio3.jpg'
+import IMG4 from '../../assets/DonationPage.jpg'
 import './portfolio.css'
 
 const data = [
@@ -9,15 +10,23 @@ const data = [
     id: 1,
     image: IMG2,
     title: 'Todo List',
-    description: 'To do list created using django rest framework and react',
+    description: 'To do list created using django rest framework and ReactJS',
     github: 'https://github.com/crimsonherb/todo-list-django-react',
+    demo: null
+  },
+  {
+    id: 4,
+    image: IMG4,
+    title: 'Buy me a drink',
+    description: 'A donation page developed using Stripe API to process payments and Django for the backend',
+    github: 'https://github.com/crimsonherb/django-stripe-donation/tree/master',
     demo: null
   },
   {
     id: 2,
     image: IMG1,
     title: 'Recipe Webapp',
-    description: 'A recipe app created using django and PostgreSQL',
+    description: 'A recipe app created using django and PostgreSQL, has login features and create, read, update elements',
     github: 'https://github.com/crimsonherb/django-project-1',
     demo: null
   },
@@ -28,7 +37,8 @@ const data = [
     description: 'Website to showcase projects. Created using React and EMAILJS API to enable contacting option',
     github: 'https://github.com/crimsonherb/react-portfolio-website',
     demo: 'https://crimsonherb.vercel.app'
-  }
+  },
+
 ]
 
 
