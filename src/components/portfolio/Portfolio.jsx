@@ -13,7 +13,7 @@ const data = [
     title: 'Cloud Resume Challenge',
     description: 'Hosted my resume on my own domain and using the following services from Amazon: S3, CloudFront, Route 53, Lambda, DynamoDB',
     github: null,
-    demo: 'www.crimsonherb.xyz'
+    demo: 'https://www.crimsonherb.xyz'
   },
   {
     id: 5,
