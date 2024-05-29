@@ -1,11 +1,28 @@
 import React from 'react'
-import IMG1 from '../../assets/Recipe_webapp.jpg'
+import IMG1 from '../../assets/CloudResume.jpg'
 import IMG2 from '../../assets/Todolist.jpg'
 import IMG3 from '../../assets/PortfolioPage.jpg'
 import IMG4 from '../../assets/DonationPage.jpg'
+import IMG5 from '../../assets/FASAE-SoCal.jpg'
 import './portfolio.css'
 
 const data = [
+  {
+    id: 2,
+    image: IMG1,
+    title: 'Cloud Resume Challenge',
+    description: 'Hosted my resume on my own domain and using the following services from Amazon: S3, CloudFront, Route 53, Lambda, DynamoDB',
+    github: null,
+    demo: 'www.crimsonherb.xyz'
+  },
+  {
+    id: 5,
+    image: IMG5,
+    title: 'FASAE SoCal - Page',
+    description: 'Development of the backend-side for the website of Filipino American Society of Architects and Engineers of Southern California using Express and MongoDB',
+    github: null,
+    demo: 'https://www.fasae-socal.org/'
+  },
   {
     id: 1,
     image: IMG2,
@@ -20,14 +37,6 @@ const data = [
     title: 'Buy me a drink',
     description: 'A donation page developed using Stripe API to process payments and Django for the backend',
     github: 'https://github.com/crimsonherb/django-stripe-donation/tree/master',
-    demo: null
-  },
-  {
-    id: 2,
-    image: IMG1,
-    title: 'Recipe Webapp',
-    description: 'A recipe app created using django and PostgreSQL, has login features and create, read, update elements',
-    github: 'https://github.com/crimsonherb/django-project-1',
     demo: null
   },
   {
@@ -56,7 +65,7 @@ const Portfolio = () => {
       <div className='portfolio__content'>
 
         {
-          data.map(({id, image, title, description, github, demo}) => {
+          data.map(({id, image, title, description, github="", demo}) => {
             return(
               <article key={id} className='portfolio__item'>
               
@@ -70,7 +79,9 @@ const Portfolio = () => {
               <p>{description}</p>
 
               <div className='portfolio__item-cta'>
-                <a href={github} className='btn'>Github</a>
+                {github !== null ? (
+                  <a href={github} className='btn'>Github</a>
+                  ):(null)}
                 {demo !== null ? (
                   <a href={demo} className='btn btn-primary'>Live Demo</a>
                 ):(null)}

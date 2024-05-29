@@ -22,10 +22,9 @@ const About = () => {
             <h2 className='header-title'>About Me</h2>
 
             <p>
-            Hello! I'm Joma Villanueva. 
-            I developed a strong interest in web development when creating a thesis project for
-            a research subject in 2014. This intereset was further ignited during a summer internship
-            at a laboratory group in UPD-DCS. </p>
+            Hello! I'm Joma Villanueva.
+            I'm currently a software developer for Invensity.
+            Currently learning more about infrastructure and cloud in order to one day become a cloud engineer</p>
             <p>
             I  graduated with a bachelor's degree in Mechanical Engineering from University of the Philippines - Diliman in 2020 
             and passed the board examinations in 2021. I am currently looking for job opportunity that matches my interest.
